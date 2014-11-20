@@ -16,6 +16,7 @@ version <next>:
 - Closed caption Decoder
 - fspp, uspp, pp7 MPlayer postprocessing filters ported to native filters
 - showpalette filter
+- V4L2 mem2mem HW accelerated codecs support
 
 
 version 2.5:

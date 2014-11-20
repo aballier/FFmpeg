@@ -166,10 +166,12 @@ void avcodec_register_all(void)
     REGISTER_ENCDEC (GIF,               gif);
     REGISTER_ENCDEC (H261,              h261);
     REGISTER_ENCDEC (H263,              h263);
+    REGISTER_ENCDEC (H263_V4L2M2M,      h263_v4l2m2m);
     REGISTER_DECODER(H263I,             h263i);
     REGISTER_ENCDEC (H263P,             h263p);
     REGISTER_DECODER(H264,              h264);
     REGISTER_DECODER(H264_CRYSTALHD,    h264_crystalhd);
+    REGISTER_ENCDEC (H264_V4L2M2M,      h264_v4l2m2m);
     REGISTER_DECODER(H264_VDA,          h264_vda);
     REGISTER_DECODER(H264_VDPAU,        h264_vdpau);
     REGISTER_DECODER(HEVC,              hevc);
@@ -204,11 +206,14 @@ void avcodec_register_all(void)
     REGISTER_ENCDEC (MPEG2VIDEO,        mpeg2video);
     REGISTER_ENCDEC (MPEG4,             mpeg4);
     REGISTER_DECODER(MPEG4_CRYSTALHD,   mpeg4_crystalhd);
+    REGISTER_ENCDEC (MPEG4_V4L2M2M,     mpeg4_v4l2m2m);
     REGISTER_DECODER(MPEG4_VDPAU,       mpeg4_vdpau);
     REGISTER_DECODER(MPEGVIDEO,         mpegvideo);
     REGISTER_DECODER(MPEG_VDPAU,        mpeg_vdpau);
     REGISTER_DECODER(MPEG1_VDPAU,       mpeg1_vdpau);
+    REGISTER_DECODER(MPEG1_V4L2M2M,     mpeg1_v4l2m2m);
     REGISTER_DECODER(MPEG2_CRYSTALHD,   mpeg2_crystalhd);
+    REGISTER_DECODER(MPEG2_V4L2M2M,     mpeg2_v4l2m2m);
     REGISTER_DECODER(MSA1,              msa1);
     REGISTER_DECODER(MSMPEG4_CRYSTALHD, msmpeg4_crystalhd);
     REGISTER_DECODER(MSMPEG4V1,         msmpeg4v1);
@@ -287,6 +292,7 @@ void avcodec_register_all(void)
     REGISTER_DECODER(VBLE,              vble);
     REGISTER_DECODER(VC1,               vc1);
     REGISTER_DECODER(VC1_CRYSTALHD,     vc1_crystalhd);
+    REGISTER_DECODER(VC1_V4L2M2M,       vc1_v4l2m2m);
     REGISTER_DECODER(VC1_VDPAU,         vc1_vdpau);
     REGISTER_DECODER(VC1IMAGE,          vc1image);
     REGISTER_DECODER(VCR1,              vcr1);
@@ -299,6 +305,7 @@ void avcodec_register_all(void)
     REGISTER_DECODER(VP6F,              vp6f);
     REGISTER_DECODER(VP7,               vp7);
     REGISTER_DECODER(VP8,               vp8);
+    REGISTER_ENCDEC (VP8_V4L2M2M,       vp8_v4l2m2m);
     REGISTER_DECODER(VP9,               vp9);
     REGISTER_DECODER(VQA,               vqa);
     REGISTER_DECODER(WEBP,              webp);
