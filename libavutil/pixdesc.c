@@ -1900,6 +1900,18 @@ const AVPixFmtDescriptor av_pix_fmt_descriptors[AV_PIX_FMT_NB] = {
         .name = "vda",
         .flags = AV_PIX_FMT_FLAG_HWACCEL,
     },
+    [AV_PIX_FMT_NV12T] = {
+        .name = "nv12t",
+        .nb_components = 3,
+        .log2_chroma_w = 1,
+        .log2_chroma_h = 1,
+        .comp = {
+            { 0, 0, 1, 0, 7 },        /* Y */
+            { 1, 1, 1, 0, 7 },        /* U */
+            { 1, 1, 2, 0, 7 },        /* V */
+        },
+        .flags = AV_PIX_FMT_FLAG_PLANAR,
+    },
 };
 
 static const char *color_range_names[AVCOL_RANGE_NB] = {
